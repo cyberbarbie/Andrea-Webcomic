@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Andrea's Comics</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/login.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
+        crossorigin="anonymous">
+    <script src="https://www.gstatic.com/firebasejs/5.0.2/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyD5IQrgGiCke0wKYaY6GUcJpw5_gcqPAOs",
+            authDomain: "drea-comic-login.firebaseapp.com",
+            databaseURL: "https://drea-comic-login.firebaseio.com",
+            projectId: "drea-comic-login",
+            storageBucket: "",
+            messagingSenderId: "460007520270"
+        };
+        firebase.initializeApp(config);
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-lg-12">
+                    <p>Drea's Comics
+                        <a href="/login" method="GET" id="left">Admin Login</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>

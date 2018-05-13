@@ -1,0 +1,35 @@
+<% include ./partials/header2 %>
+
+<div class="wrapper">
+    <aside id="sidebar">
+        <!-- <div class="sidebarHeader">
+            <h3>Menu</h3>
+        </div> -->
+        <ul class="listUnstyled components">
+            <li id="first"><a href="/index" method="GET"><i class="fas fa-home" alt="Home"></i></a></li>
+            <li><a href="#" method="GET"><i class="fas fa-info-circle" alt="Artist Info"></i></a></li>
+            <li><a href="#" method="GET"><i class="fas fa-paint-brush" alt="Artwork"></i></a></li>
+        </ul>
+    </aside>
+    <section>
+        <div class="container" id="loginForm">
+            <div class="header">
+                <h3>Login</h3>
+            </div>
+            <form action="">
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" class="form-control" id="emailField">
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" class="form-control" id="pwdField">
+                </div>
+                <button type="button" class="btn btn-dark" onclick="signIn()">Login</button>
+            </form>
+        </div>
+    </section>
+</div>
+
+
+<% include ./partials/footer %>
