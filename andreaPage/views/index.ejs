@@ -6,7 +6,12 @@
             <h3>Menu</h3>
         </div> -->
         <ul class="listUnstyled components">
-            <li id="first">
+            <li id="active">
+                <a href="#" method="GET" id="closeSidebar">
+                    <i class="fas fa-window-close" alt="Close The Sidebar"></i>
+                </a>
+            </li>
+            <li>
                 <a href="/index" method="GET">
                     <i class="fas fa-home" alt="Home"></i>
                 </a>
@@ -30,12 +35,25 @@
             </div>
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-lg-4">
-                    <% art.forEach(function(art){ %>
+                    <% arts.forEach(function(art){ %>
                         <div class="card">
-
+                            <img class="card-img-top" src="<%= art.image1 %>">
+                            <div class="card-body">
+                                <a class="card-title" href="/index/<%= art._id %>"><%= art.title %></a>
+                                <p class="card-text">
+                                    <% if(art.body && art.body.length > 0) { %>
+                                        <p class="card-text"><%- art.body.substring(0, 100) %></p>
+                                   <% } %>
+                                </p>
+                                <p class="card-text"><%= art.created.toDateString() %></p>
+                                <a class="btn btn-primary" href="/index/<=% art._id %>">Read The Comic!</a>
+                            </div>
                         </div>
-                    <$ }) %>
+                    <% }) %>
                 </div>
             </div>
         </div>
     </section>
+</div>
+
+<% include ./partials/footer %>

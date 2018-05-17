@@ -1,0 +1,83 @@
+<% include ./partials/header4.ejs %>
+
+<div class="wrapper">
+    <aside id="sidebar">
+        <!-- <div class="sidebarHeader">
+                <h3>Menu</h3>
+            </div> -->
+        <ul class="listUnstyled components">
+            <li id="active">
+                <a href="/index" method="GET" id="closeSideBar">
+                    <i class="fas fa-home" alt="Home"></i>
+                </a>
+            </li>
+            <li>
+                <a href="/adminPage" method="GET">
+                    <i class="far fa-plus-square" alt="Add New comic"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" method="GET">
+                    <i class="far fa-edit" alt="Edit Comics"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" method="GET">
+                    <i class="fas fa-info-circle" alt="Artist Info"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" method="GET">
+                    <i class="fas fa-paint-brush" alt="Artwork"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#" method="GET">
+                    <i class="fas fa-window-close" alt="Close The Sidebar" id="closeSidebar"></i>
+                </a>
+            </li>
+        </ul>
+    </aside>
+    <section id="addComic">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                    <p class="header">Upload New Comic</p>
+                    <form action="/" method="POST">
+                        <div class="form-group">
+                            <label>Title</label>
+                            <input type="text" name="art[title]" placeholder="Title">
+                        </div>
+                        <div class="form-group">
+                            <label>Image 1</label>
+                            <input type="text" name="art[image1]" placeholder="First Image">
+                        </div>
+                        <div class="form-group">
+                            <label>Image 2</label>
+                            <input type="text" name="art[image2]" placeholder="Second Image">
+                        </div>
+                        <div class="form-group">
+                            <label>Image 3</label>
+                            <input type="text" name="art[image3]" placeholder="Third Image">
+                        </div>
+                        <div class="form-group">
+                            <label>Image 4</label>
+                            <input type="text" name="art[image4]" placeholder="Fourth Image">
+                        </div>
+                        <div class="form-group">
+                            <label>Image 5</label>
+                            <input type="text" name="art[image5]" placeholder="Fifth Image">
+                        </div>
+                        <div class="form-group">
+                            <label>Description</label>
+                            <textarea name="art[body]" cols="30" rows="10"></textarea>
+                        </div>
+                        <button class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+
+<% include ./partials/footer %>

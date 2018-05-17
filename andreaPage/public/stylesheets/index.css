@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.warpper {
+    display: flex;
+    align-items: stretch;
+}
+
+#sidebar {
+    position: fixed;
+    z-index: 1;
+    width: 0;
+    height: 100vh;
+    background-color: black;
+    color: white;
+    overflow-y: hidden;
+    overflow-x: visible;
+    transition: all 0.3s;
+    text-align: center;
+}
+
+
+#sidebar ul {
+    margin-top: 50px;
+}
+
+#sidebar ul li {
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 0.5px solid gray;
+}
+
+#sidebar ul li:hover {
+    cursor: pointer;
+    background-color: #000080;
+}
+
+#first {
+    padding-top: 10px;
+}
+
+#sidebar ul li a {
+    color: white;
+}
+
+#display {
+    width: 100%;
+    position: absolute;
+    margin-top: 50px;
+}
+
+.wrapper.toggled #sidebar {
+    width: 50px;
+    transition: all 0.3s;
+}
+
+.wrapper.toggled #content {
+    margin-left: 50px;
+    transition: all 0.3s;
+}
+
+header {
+    box-sizing: border-box;
+    top: 0;
+    position: absolute;
+    min-width: 100%;
+    z-index: 1;
+    border-bottom: 0.75px solid gray;
+    background-color: black;
+    color: white;
+}
+
+
+header p {
+    margin-top: 10px;
+}
+
+header #left {
+    float: right;
+    color: white;
+    opacity: 0.7;
+}
+
+header #openSidebar {
+    cursor: pointer;
+    padding-right: 20px;
+}
+
+footer {
+    position: fixed;
+    height: 45px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+    color: white;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+}
+
+footer ul {
+    display: flex;
+    list-style: none;
+    margin-bottom: 0;
+}
+
+footer ul li {
+    margin-left: 15px;
+}
+
+footer ul li a {
+    color: white;
+}
+
+footer .row {
+    margin-top: 0.5em;
+}
+
+footer .eddieIcons {
+    float: right;
+}
+
+footer .dreaIcons {
+    float: left;
+}
